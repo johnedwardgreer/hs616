@@ -1,4 +1,137 @@
-Lecture 1 Question: 
-Q: True or False: R is unique, in that it is both a programming and an interactive statistical environment?
-A: True, R is a programming language and software environment for statistical computing and graphics. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
-  
+---
+title: "Questions"
+author: "John Edward Greer"
+date: "March 14, 2015"
+output: html_document
+---
+
+## Lecture 1a
+
+The data type, 5, is a(n) ________
+
+* Integer 
+* logical
+* numeric
+* complex
+
+## Lecture 1b
+
+Every data type is at least a ________
+
+* vector
+* matrix
+* array
+* factor 
+
+## Lecture 2a
+
+This statement assigns a list of weights(lbs) to a variable “w”
+
+* w <-c(98,154, 140, 190, 173)
+* w -> c(98,154, 140, 190, 173)
+* w == c(98,154, 140, 190, 173)
+* w is c(98,154, 140, 190, 173)
+
+## Lecture 2b
+
+In it’s most basic form, R can be used as a simple calculator, complete the following statement with the appropriate characters in order to assign the variable, V, to have an end value of 36, given the expression: [(48 _ 42) _2]
+
+* V<-(48-42)^2
+* V->(48-42)^2
+* V<-(48-42)*2
+* V<-(48-42)%%2
+
+## Lecture 3a
+
+Add the strings together to form a coherent English statement and in correct R language:
+
+A <- “?”
+B <- “movie”
+C <- “Have”
+D <- “that” 
+E <- “seen”
+F <- “you”
+
+* question<-c(C,F,E,D,B,A)
+* question<- C+F+E+D+B+A
+* question<-c(C+F+E+D+B+A)
+* question<-c(A,B,C,D,E,F)
+
+## Lecture 3b
+
+Generate a sequence from 122 to 154 by intervals of 2.
+
+seq(122,154,2)
+seq(154,122,2)
+seq(122,2,154)
+seq(2,154,122)
+
+## Lecture 4a
+
+Create a normal distribution curve centering on 10, with spread 0 to 20. 
+
+* n<-20
+k<-0:n
+paths<-choose(n,k)
+plot(k,paths, sum(paths))
+
+* n<-10
+k<-0:n
+paths<-choose(n,k)
+plot(k,paths, sum(paths))
+
+* n<-20
+k<-0:n
+paths<-choose(k,n)
+plot(k,paths, sum(paths))
+
+* n<-10
+k<-0:n
+paths<-choose(k,n)
+plot(k,paths, sum(paths))
+
+## Lecture 4b
+
+Create a rectangular matrix with 16 entries of numbers 1 through 16. The matrix should have 4 rows and have the numbers increasing across each row. What would this command look like in R? 
+
+* matrix(1:16, byrow=TRUE, nrow=4)
+* matrix(1:16)
+* matrix(1:16, byrow =FALSE)
+* matrix(1:16, byrow = TRUE, nrow=2) 
+
+## Lecture 5a
+
+Body Mass Index is a measure of body fat based on height(m) and weight(kg) that applies to adult men and women, one matrix holds each patient’s height(“HEIGHT”), while a second matrix holds each patient’s weight(“WEIGHT”). Knowing that BMI = Weight(kg)/Height^2(m^2), what function in R would produce a table of BMI for each respective patient? 
+
+* BMI<-WEIGHT/HEIGHT^2
+* BMI <-HEIGHT/WEIGHT^2
+* It cannot be performed
+
+## Lecture 5b
+
+There is a dataset called CDC, within the dataset there are columns representing patient name, age,  height, and weight – What R command allows the selection of all entries within the weight category:
+
+* CDC$weight
+* Weight$CDC
+* CDC(weight)
+* Wight(CDC)
+
+
+## Lecture 6a
+
+Read.table loads a text file into a data frame. True or False?
+
+* True
+* False 
+
+## Lecture 6b
+
+The function head() does this:
+
+* enables you to show the first observations of a data frame(or any R object you pass to it)
+* creates a header in the data frame
+* summarizes the data in a table
+
+## Lecture 7a
+
+## Lecture 7b
